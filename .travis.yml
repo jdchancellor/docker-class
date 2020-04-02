@@ -4,7 +4,7 @@ services:
 
 
 before_install:
-    -docker build -t jdchancellor/docker-class -f Dockerfile.dev .
+    - docker build -t jdchancellor/docker-class -f Dockerfile.dev .
 
 script:
     - docker run jdchancellor/docker-class npm run test -- --coverage
